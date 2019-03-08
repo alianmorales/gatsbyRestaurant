@@ -1,21 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
-
+// import { Link } from "gatsby"
+// import styled from "styled-components"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
+
+import { FaBeer } from "react-icons/fa"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+  <Layout SEO title="Home" keywords={[`gatsby`, `application`, `react`]}>
+    <h3>
+      Welcome to IDENTIFID f <FaBeer />
+    </h3>
   </Layout>
 )
 
+// const ButtonWrapper = styled.button`
+//   background: pink;
+//   color: blue;
+//   font-size: 14px;
+//   padding: 10px;
+//   border-radius: 3px;
+//   border: none;
+// `
+
+// const ButtonLeft = styled.button`
+//   background: green;
+//   color: orange;
+//   font-size: 14px;
+//   padding: 10px;
+//   border-radius: 3px;
+//   border: none;
+// `
 export default IndexPage
